@@ -56,6 +56,10 @@ export default function RootLayout({
     <html lang="en" className={cx(GeistSans.variable, GeistMono.variable)}>
       <head>
         <link
+          href="https://fonts.googleapis.com/css2?family=Iosevka:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+        <link
           rel="alternate"
           type="application/rss+xml"
           href="/rss.xml"
