@@ -17,13 +17,12 @@ export default function Page() {
       </a>
 
       <h1 className="mb-8 text-2xl font-medium tracking-tight">
-        Portfolio, made simple!
+        Hi there, I am Arjun
       </h1>
 
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          A clean, fast, and lightweight portfolio template built with Next.js,
-          Vercel, and Tailwind CSS for optimal performance.
+          I am a computer science engineer from India. 
         </p>
         <p>
           Nextfolio includes all the essentials for a stunning portfolio: SEO,
