@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '@fontsource/iosevka';
 
 ::selection {
   background-color: #ffd596;
@@ -9,8 +10,8 @@
 
 /* Light theme colors */
 :root {
-  background-color: #ffeacb;
-  color: #4e350e;
+  background-color: #faf4ed;
+  color: #907aa9;
   --sh-class: #2d5e9d;
   --sh-identifier: #354150;
   --sh-sign: #8996a3;
@@ -24,8 +25,8 @@
 
 /* Dark theme colors */
 .dark {
-  background-color: #201a1e;
-  color: #ffd596;
+  background-color: #191724;
+  color: #eb6f92;
   --sh-class: #4c97f8;
   --sh-identifier: white;
   --sh-sign: #8996a3;
@@ -43,6 +44,7 @@ html {
 
 html,
 body {
+  font-size: 20px;
   font-family: 'Iosevka', sans-serif;
   @apply font-sans;
 }

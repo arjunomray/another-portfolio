@@ -7,24 +7,21 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Project One",
+    title: "What to do",
+    year: 2024,
+    description: "A full stack multi-user to-do application made using react, fastapi, sqlite and OAuth2.",
+    url: "https://github.com/arjunomray/what-to-do-frontend",
+  },
+  {
+    title: "Rustime",
+    year: 2024,
+    description: "A rust based pomodoro timer cli app.",
+    url: "https://crates.io/crates/rustime",
+  },
+  {
+    title: "Wall-cli",
     year: 2023,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: "https://example.com/",
-  },
-  {
-    title: "Project Two",
-    year: 2022,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: "https://example.com/",
-  },
-  {
-    title: "Project Three",
-    year: 2021,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: "https://example.com/",
+    description: "A cli tool to download wallpapers in bulk from wallhaven",
+    url: "https://github.com/arjunomray/wall-cli",
   },
 ];
