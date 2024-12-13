@@ -27,7 +27,7 @@ export default function Page() {
 
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          I am a computer science engineer from India.
+          I am a software <b>dev</b> from India.
         </p>
         <p>
           When I am not trying to build <i className="text-[#286983] dark:text-[#ea9a97]">the next big thing</i>, you can find me reading books, playing video games or meditating.
