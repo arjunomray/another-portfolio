@@ -34,9 +34,8 @@ export async function GET(
     description: metaData.description,
     id: BaseUrl,
     link: BaseUrl,
-    copyright: `All rights reserved ${new Date().getFullYear()}, ${
-      metaData.title
-    }`,
+    copyright: `All rights reserved ${new Date().getFullYear()}, ${metaData.title
+      }`,
     generator: "Feed for Node.js",
     feedLinks: {
       json: `${BaseUrl}feed.json`,
@@ -45,7 +44,7 @@ export async function GET(
     },
   });
 
-  const allPosts = await getBlogPosts();
+  const allPosts = getBlogPosts();
 
   allPosts.forEach((post) => {
     const postUrl = `${BaseUrl}blog/${post.slug}`;
@@ -67,11 +66,11 @@ export async function GET(
   });
 
   const responseMap: Record<string, { content: string; contentType: string }> =
-    {
-      "rss.xml": { content: feed.rss2(), contentType: "application/xml" },
-      "atom.xml": { content: feed.atom1(), contentType: "application/xml" },
-      "feed.json": { content: feed.json1(), contentType: "application/json" },
-    };
+  {
+    "rss.xml": { content: feed.rss2(), contentType: "application/xml" },
+    "atom.xml": { content: feed.atom1(), contentType: "application/xml" },
+    "feed.json": { content: feed.json1(), contentType: "application/json" },
+  };
 
   const response = responseMap[format];
 
