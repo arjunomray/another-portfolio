@@ -2,9 +2,8 @@ export const metaData = {
   baseUrl: "https://array0111.vercel.app/",
   title: "array0111's home",
   name: "Arjun Omray",
-  ogImage: "/opengraph-image.png",
-  description:
-    "A clean, fast, and lightweight portfolio template built with Next.js, Vercel, and Tailwind CSS for optimal performance.",
+  ogImage: "/profile.png",
+  description: "Just a portfolio website",
 };
 
 export const socialLinks = {
