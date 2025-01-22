@@ -1,17 +1,28 @@
 import Link from "next/link";
 import { ThemeSwitch } from "./theme-switch";
 import { metaData } from "../config";
+import fs from "fs";
+
+let blogs = fs.readdirSync("content");
+const blogsNumber = blogs.length;
+
+
 
 const navItems = {
-  "/blog": { name: "Blog" },
+  "/experience": { name: "Experience" },
   "/projects": { name: "Projects" },
   "/photos": { name: "Photos" },
 };
 
+if (blogsNumber > 0) {
+  navItems["/blog"] = { name: "Blog" };
+}
+
+
 export function Navbar() {
   return (
-    <nav className="lg:mb-16 mb-12 py-5">
-      <div className="flex flex-col md:flex-row md:items-center justify-between">
+    <nav className="mb-1 py-5">
+      <div className="flex flex-col md:flex-row items-center md:justify-between">
         <div className="flex items-center">
           <Link href="/" className="text-3xl font-semibold tracking-tight">
             {metaData.title}

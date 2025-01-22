@@ -14,7 +14,6 @@ export default function Photos() {
 
 
       <ImageGrid
-        columns={2}
         images={[
           { src: "/photos/photos (1).jpg", alt: "A street light" },
           { src: "/photos/photos (2).jpg", alt: "Just some clouds" },

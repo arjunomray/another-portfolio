@@ -9,9 +9,7 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa6";
 import { TbMailFilled } from "react-icons/tb";
-import { metaData, socialLinks } from "app/config";
-
-const YEAR = new Date().getFullYear();
+import { socialLinks } from "app/config";
 
 function SocialLink({ href, icon: Icon }) {
   return (
@@ -38,7 +36,7 @@ function SocialLinks() {
 
 export default function Footer() {
   return (
-    <small className="block lg:mt-24 mt-16 text-[#1C1C1C] dark:text-[#D4D4D4]">
+    <small className="block flex justify-center items-center lg:mt-24 mt-16 text-[#1C1C1C] dark:text-[#D4D4D4]">
       <style jsx>{`
         @media screen and (max-width: 480px) {
           article {

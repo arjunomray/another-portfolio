@@ -5,11 +5,13 @@ import Link from "next/link";
 
 export default function Page() {
   const allBlogs = getBlogPosts();
+
+
   const latestBlog = allBlogs[0]; // Assuming the blogs are sorted by date
 
   return (
     <section>
-      <a href={socialLinks.twitter} target="_blank">
+      <a href={socialLinks.twitter} target={socialLinks.twitter}>
         <Image
           src="/profile.png"
           alt="Profile photo"
@@ -37,8 +39,9 @@ export default function Page() {
         <p><i>"Praise the sun!"</i></p>
       </div>
 
+
       {/* Display the latest blog link */}
-      {latestBlog && (
+      {allBlogs.length > 0 && (
         <div className="mt-10">
           <h2 className="text-lg font-semibold inline">Latest Blog Post: </h2>
           <Link href={`/blog/${latestBlog.slug}`} className="text-[#b4637a] dark:text-[#9ccfd8] hover:underline">
