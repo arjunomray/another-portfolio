@@ -41,7 +41,7 @@ export default function Page() {
 
 
       {/* Display the latest blog link */}
-      {allBlogs.length > 0 && (
+      {allBlogs.length > 1 && (
         <div className="mt-10">
           <h2 className="text-lg font-semibold inline">Latest Blog Post: </h2>
           <Link href={`/blog/${latestBlog.slug}`} className="text-[#b4637a] dark:text-[#9ccfd8] hover:underline">

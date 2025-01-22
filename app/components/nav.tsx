@@ -14,7 +14,7 @@ const navItems = {
   "/photos": { name: "Photos" },
 };
 
-if (blogsNumber > 0) {
+if (blogsNumber > 1) {
   navItems["/blog"] = { name: "Blog" };
 }
 
