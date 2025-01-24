@@ -13,7 +13,7 @@ export default function Experiences() {
       <h1 className="mb-8 text-2xl font-medium tracking-tight">Experiences</h1>
       <div className="space-y-6">
         {experiences.map((experience, index) => (
-          <div className="p-2 dark:shadow-white rounded-lg shadow-md hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+          <div className="p-2 dark:shadow-gray-700 rounded-lg shadow-md hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
             <a
               key={index}
               target="_blank"
