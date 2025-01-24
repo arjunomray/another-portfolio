@@ -21,18 +21,27 @@ export default function Experiences() {
               className="block group hover:opacity-80 transition-opacity duration-200"
             >
               <div className="flex flex-col">
-                <div className="w-full flex justify-between items-baseline">
-                  <span className="text-black dark:text-white font-medium tracking-tight">
-                    {experience.company}
-                  </span>
-                  <span className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm">
-                    {experience.duration}
-                  </span>
 
+                <div className="w-full flex justify-between items-center">
+                  <img
+                    src={experience.icon}
+                    alt={experience.company}
+                    className="m-2 p-1 shadow-md dark:bg-gray-100 rounded-md w-10 h-10"
+                  />
+                  <div className="flex flex-col justify-start text-right">
+                    <span className="text-black dark:text-white font-medium tracking-tight">
+                      {experience.company}
+                    </span>
+                    <span className=" text-right text-neutral-600 dark:text-neutral-400 text-sm  font-light italic tracking-tight">
+                      {experience.position}
+                    </span>
+                    <span className="text-right text-neutral-600 dark:text-neutral-500 tabular-nums text-sm">
+                      {experience.duration}
+                    </span>
+                  </div>
                 </div>
-                <span className="text-neutral-600 dark:text-neutral-400 text-sm  font-light italic tracking-tight">
-                  {experience.position}
-                </span>
+
+
               </div>
             </a>
           </div>
