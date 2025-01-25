@@ -13,7 +13,7 @@ export default function Experiences() {
       <h1 className="mb-8 text-center text-xl font-bold tracking-tight">Experiences</h1>
       <div className="flex flex-col items-center space-y-6">
         {experiences.map((experience, index) => (
-          <div key={index} className="w-1/2 p-2 dark:shadow-gray-700 rounded-lg shadow-md hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+          <div key={index} className="w-60 md:w-96 p-2 dark:shadow-gray-700 rounded-lg shadow-md hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
             <div className="flex flex-col">
 
               <div className="w-full flex justify-between items-center">
