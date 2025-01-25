@@ -23,11 +23,11 @@ export default function Page() {
         />
       </a>
 
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">
-        Hi there, I am <span className="inline text-[#b4637a] dark:text-[#9ccfd8]">Arjun</span> 🙌
+      <h1 className="mb-8 lg:mb-1 text-2xl font-medium tracking-tight">
+        Hello there,<br /> I am <span className="inline text-[#b4637a] dark:text-[#9ccfd8]">Arjun</span> 🙌
       </h1>
 
-      <div className="prose prose-neutral dark:prose-invert">
+      <div className="w-2/3 prose prose-neutral dark:prose-invert">
         <p>
           I am a software <b>dev</b> from India.
         </p>

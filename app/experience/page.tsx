@@ -10,40 +10,33 @@ export const metadata: Metadata = {
 export default function Experiences() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">Experiences</h1>
-      <div className="space-y-6">
+      <h1 className="mb-8 text-center text-xl font-bold tracking-tight">Experiences</h1>
+      <div className="flex flex-col items-center space-y-6">
         {experiences.map((experience, index) => (
-          <div className="p-2 dark:shadow-gray-700 rounded-lg shadow-md hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
-            <a
-              key={index}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block group hover:opacity-80 transition-opacity duration-200"
-            >
-              <div className="flex flex-col">
+          <div key={index} className="w-1/2 p-2 dark:shadow-gray-700 rounded-lg shadow-md hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+            <div className="flex flex-col">
 
-                <div className="w-full flex justify-between items-center">
-                  <img
-                    src={experience.icon}
-                    alt={experience.company}
-                    className="m-2 p-1 shadow-md dark:bg-gray-100 rounded-md w-10 h-10"
-                  />
-                  <div className="flex flex-col justify-start text-right">
-                    <span className="text-black dark:text-white font-medium tracking-tight">
-                      {experience.company}
-                    </span>
-                    <span className=" text-right text-neutral-600 dark:text-neutral-400 text-sm  font-light italic tracking-tight">
-                      {experience.position}
-                    </span>
-                    <span className="text-right text-neutral-600 dark:text-neutral-500 tabular-nums text-sm">
-                      {experience.duration}
-                    </span>
-                  </div>
+              <div className="w-full flex justify-between items-center">
+                <img
+                  src={experience.icon}
+                  alt={experience.company}
+                  className="ml-2 p-1 dark:bg-gray-100 rounded-md w-10 h-10"
+                />
+                <div className="flex flex-col justify-start text-right">
+                  <span className="text-black dark:text-white font-medium tracking-tight">
+                    {experience.company}
+                  </span>
+                  <span className=" text-right text-neutral-600 dark:text-neutral-400 text-sm  font-light italic tracking-tight">
+                    {experience.position}
+                  </span>
+                  <span className="text-right text-neutral-600 dark:text-neutral-500 tabular-nums text-sm">
+                    {experience.duration}
+                  </span>
                 </div>
-
-
               </div>
-            </a>
+
+
+            </div>
           </div>
         ))}
       </div>

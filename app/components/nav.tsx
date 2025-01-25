@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ThemeSwitch } from "./theme-switch";
-import { metaData } from "../config";
 import fs from "fs";
+import { FlickeringHeading } from "./flickering-heading";
 
 let blogs = fs.readdirSync("content");
 const blogsNumber = blogs.length;
@@ -21,14 +21,10 @@ if (blogsNumber > 1) {
 
 export function Navbar() {
   return (
-    <nav className="mb-1 py-5">
-      <div className="flex flex-col md:flex-row items-center md:justify-between">
-        <div className="flex items-center">
-          <Link href="/" className="text-3xl font-semibold tracking-tight">
-            {metaData.title}
-          </Link>
-        </div>
-        <div className="flex flex-row gap-4 mt-6 md:mt-0 md:ml-auto items-center">
+    <nav className="mb-10 py-2">
+      <div className="flex flex-col items-center ">
+
+        <div className="flex p-2 justify-center items-center gap-3">
           {Object.entries(navItems).map(([path, { name }]) => (
             <Link
               key={path}
@@ -40,7 +36,13 @@ export function Navbar() {
           ))}
           <ThemeSwitch />
         </div>
+        <div className="flex justify-center items-center">
+          <Link href="/" >
+            <FlickeringHeading />
+          </Link>
+        </div>
       </div>
+
     </nav>
   );
 }

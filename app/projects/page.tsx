@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 export default function Projects() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">Projects</h1>
-      <div className="space-y-6">
+      <h1 className="mb-8 text-center text-xl font-bold tracking-tight">Projects</h1>
+      <div className="flex flex-col items-center space-y-6">
         {projects.map((project, index) => (
-          <div className="p-2 dark:shadow-gray-700 rounded-lg shadow-md hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+          <div className="p-3 max-w-80 dark:shadow-gray-700 rounded-lg shadow-md hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
             <a
               key={index}
               href={project.url}
