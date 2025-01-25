@@ -30,7 +30,7 @@ export const FlickeringHeading = () => {
 
   return (
     <div>
-      <h1 className="text-5xl font-bold mb-4  relative neon-text inline-block"
+      <h1 className=" text-3xl lg:text-5xl font-bold mb-4 relative neon-text inline-block"
       >
         {letters}
         <span className="ml-2">👋</span>

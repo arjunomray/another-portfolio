@@ -27,7 +27,7 @@ export default function Page() {
         Hello there,<br /> I am <span className="inline text-[#b4637a] dark:text-[#9ccfd8]">Arjun</span> 🙌
       </h1>
 
-      <div className="w-2/3 prose prose-neutral dark:prose-invert">
+      <div className="lg:w-2/3 prose prose-neutral dark:prose-invert">
         <p>
           I am a software <b>dev</b> from India.
         </p>
