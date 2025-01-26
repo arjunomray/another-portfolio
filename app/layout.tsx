@@ -79,7 +79,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="flex-auto min-w-0 mt-2 flex flex-col px-6 sm:px-4 md:px-0 max-w-[700px] w-full">
+          <main
+            style={{
+              textShadow: "0px 0px 5px currentColor",
+            }}
+            className="flex-auto min-w-0 mt-2 flex flex-col px-6 sm:px-4 md:px-0 max-w-[700px] w-full">
             <Navbar />
             {children}
             <Footer />

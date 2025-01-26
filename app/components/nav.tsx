@@ -30,6 +30,9 @@ export function Navbar() {
               key={path}
               href={path}
               className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative italic"
+              style={{
+                textShadow: "0px 0px 5px currentColor",
+              }}
             >
               {name}
             </Link>
