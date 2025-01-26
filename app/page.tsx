@@ -2,7 +2,6 @@ import Image from "next/image";
 import { socialLinks } from "./config";
 import { getBlogPosts } from "./lib/posts";
 import Link from "next/link";
-import { SynthwaveBackground } from "./components/synthwave-bg";
 
 export default function Page() {
   const allBlogs = getBlogPosts();
